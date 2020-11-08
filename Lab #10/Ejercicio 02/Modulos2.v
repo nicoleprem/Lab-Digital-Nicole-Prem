@@ -8,7 +8,7 @@ module tristate_ALU_result(input[4:0]inA, input enA, output tri [4:0]outA); //bu
 assign outA= enA ? inA : 5'bz;
 endmodule
 
-module ALU (input wire [2:0]F, input wire [4:0]A, B, output reg [4:0]Y, output C, ZE);
+module ALU (input wire [2:0]F, input wire [4:0]A, B, output reg [4:0]Y, output reg C, ZE);
 always @ (*)
 begin 
     case (F)
@@ -47,16 +47,16 @@ end
 endmodule 
 
 module Accu(input clk, reset, input [4:0]D2, input enable, output wire [4:0] ACCU); //FF tipo D de 5 bits
-FFD1 D0(clk, reset, D2[0], ACCU[0]);
-FFD1 D1(clk, reset, D2[1], ACCU[1]);
-FFD1 D8(clk, reset, D2[2], ACCU[2]);
-FFD1 D3(clk, reset, D2[3], ACCU[3]);
-FFD1 D4(clk, reset, D2[4], ACCU[5]);
+FFD1 D0(clk, reset, D2[0], enable, ACCU[0]);
+FFD1 D1(clk, reset, D2[1], enable, ACCU[1]);
+FFD1 D8(clk, reset, D2[2], enable, ACCU[2]);
+FFD1 D3(clk, reset, D2[3], enable, ACCU[3]);
+FFD1 D4(clk, reset, D2[4], enable, ACCU[4]);
 endmodule
 
-module Procesador(input [2:0]F, input [4:0]A, B, input clk, reset, enableDB, enableR, enableALU, enableFF, output [4:0]outDB, outR, outALU, outFF, output  C, ZE);
+module Procesador(input [2:0]F, input [4:0]A, B, input clk, reset, enableDB, enableR, enableFF, output [4:0]outDB, outR, outALU, outFF, output  C, ZE);
 tristate_data_buss TDB(B, enableDB, outDB);
-Accu AC(clk, reset, outALU, enableALU, outFF);
+Accu AC(clk, reset, outALU, enableFF, outFF);
 ALU Al(F, outFF, outDB, outALU, C, ZE);
 tristate_ALU_result AR(outALU, enableR, outR);
 endmodule

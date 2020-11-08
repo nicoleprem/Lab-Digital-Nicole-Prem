@@ -1,0 +1,484 @@
+$date
+	Sun Nov 08 00:47:37 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Testbench $end
+$var wire 5 ! outR [4:0] $end
+$var wire 5 " outFF [4:0] $end
+$var wire 5 # outDB [4:0] $end
+$var wire 5 $ outALU [4:0] $end
+$var wire 1 % ZE $end
+$var wire 1 & C $end
+$var reg 5 ' A [4:0] $end
+$var reg 5 ( B [4:0] $end
+$var reg 3 ) F [2:0] $end
+$var reg 1 * clk $end
+$var reg 1 + enableDB $end
+$var reg 1 , enableFF $end
+$var reg 1 - enableR $end
+$var reg 1 . reset $end
+$scope module PE $end
+$var wire 5 / A [4:0] $end
+$var wire 5 0 B [4:0] $end
+$var wire 3 1 F [2:0] $end
+$var wire 1 * clk $end
+$var wire 1 + enableDB $end
+$var wire 1 , enableFF $end
+$var wire 1 - enableR $end
+$var wire 1 . reset $end
+$var wire 5 2 outR [4:0] $end
+$var wire 5 3 outFF [4:0] $end
+$var wire 5 4 outDB [4:0] $end
+$var wire 5 5 outALU [4:0] $end
+$var wire 1 % ZE $end
+$var wire 1 & C $end
+$scope module AC $end
+$var wire 1 * clk $end
+$var wire 1 , enable $end
+$var wire 1 . reset $end
+$var wire 5 6 D2 [4:0] $end
+$var wire 5 7 ACCU [4:0] $end
+$scope module D0 $end
+$var wire 1 8 D $end
+$var wire 1 * clk $end
+$var wire 1 , enable $end
+$var wire 1 . reset $end
+$var reg 1 9 salidaF $end
+$upscope $end
+$scope module D1 $end
+$var wire 1 : D $end
+$var wire 1 * clk $end
+$var wire 1 , enable $end
+$var wire 1 . reset $end
+$var reg 1 ; salidaF $end
+$upscope $end
+$scope module D3 $end
+$var wire 1 < D $end
+$var wire 1 * clk $end
+$var wire 1 , enable $end
+$var wire 1 . reset $end
+$var reg 1 = salidaF $end
+$upscope $end
+$scope module D4 $end
+$var wire 1 > D $end
+$var wire 1 * clk $end
+$var wire 1 , enable $end
+$var wire 1 . reset $end
+$var reg 1 ? salidaF $end
+$upscope $end
+$scope module D8 $end
+$var wire 1 @ D $end
+$var wire 1 * clk $end
+$var wire 1 , enable $end
+$var wire 1 . reset $end
+$var reg 1 A salidaF $end
+$upscope $end
+$upscope $end
+$scope module AR $end
+$var wire 1 - enA $end
+$var wire 5 B outA [4:0] $end
+$var wire 5 C inA [4:0] $end
+$upscope $end
+$scope module Al $end
+$var wire 5 D A [4:0] $end
+$var wire 3 E F [2:0] $end
+$var wire 5 F B [4:0] $end
+$var reg 1 & C $end
+$var reg 5 G Y [4:0] $end
+$var reg 1 % ZE $end
+$upscope $end
+$scope module TDB $end
+$var wire 1 + en $end
+$var wire 5 H in [4:0] $end
+$var wire 5 I out [4:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bz I
+b0 H
+bx G
+bz F
+b0 E
+bx D
+bx C
+bz B
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+bx 7
+bx 6
+bx 5
+bz 4
+bx 3
+bz 2
+b0 1
+b0 0
+b0 /
+0.
+0-
+0,
+0+
+0*
+b0 )
+b0 (
+b0 '
+x&
+0%
+bx $
+bz #
+bx "
+bz !
+$end
+#2
+1*
+#4
+0*
+#6
+1*
+#8
+0*
+#10
+0&
+0>
+0<
+0@
+0:
+08
+1%
+b0 $
+b0 5
+b0 6
+b0 C
+b0 G
+09
+0;
+0A
+0=
+b0 "
+b0 3
+b0 7
+b0 D
+0?
+1*
+1.
+#12
+0*
+#14
+1*
+#16
+0*
+#18
+1*
+#20
+0*
+0.
+#22
+1*
+#24
+0*
+#26
+1*
+#28
+0*
+#30
+b0 !
+b0 2
+b0 B
+b0 #
+b0 4
+b0 F
+b0 I
+1*
+1,
+1-
+1+
+#32
+0*
+#34
+1*
+#36
+0*
+#38
+1*
+#40
+1&
+b11 !
+b11 2
+b11 B
+1:
+18
+0%
+b11 $
+b11 5
+b11 6
+b11 C
+b11 G
+b11 #
+b11 4
+b11 F
+b11 I
+0*
+b10 )
+b10 1
+b10 E
+b11 (
+b11 0
+b11 H
+#42
+19
+b11 "
+b11 3
+b11 7
+b11 D
+1;
+1*
+#44
+0*
+#46
+1*
+#48
+0*
+#50
+b1 !
+b1 2
+b1 B
+0:
+b1 $
+b1 5
+b1 6
+b1 C
+b1 G
+b1 #
+b1 4
+b1 F
+b1 I
+1*
+b1 (
+b1 0
+b1 H
+#52
+0*
+#54
+b1 "
+b1 3
+b1 7
+b1 D
+0;
+1*
+#56
+0*
+#58
+1*
+#60
+b10 !
+b10 2
+b10 B
+1:
+08
+0&
+b10 $
+b10 5
+b10 6
+b10 C
+b10 G
+0*
+b11 )
+b11 1
+b11 E
+#62
+b11 !
+b11 2
+b11 B
+18
+b11 $
+b11 5
+b11 6
+b11 C
+b11 G
+1;
+b10 "
+b10 3
+b10 7
+b10 D
+09
+1*
+#64
+0*
+#66
+b100 !
+b100 2
+b100 B
+1@
+0:
+08
+b100 $
+b100 5
+b100 6
+b100 C
+b100 G
+b11 "
+b11 3
+b11 7
+b11 D
+19
+1*
+#68
+0*
+#70
+1<
+0@
+b1000 !
+b1000 2
+b1000 B
+0:
+08
+b1000 $
+b1000 5
+b1000 6
+b1000 C
+b1000 G
+1A
+0;
+b100 "
+b100 3
+b100 7
+b100 D
+09
+b100 #
+b100 4
+b100 F
+b100 I
+1*
+b100 (
+b100 0
+b100 H
+#72
+0*
+#74
+b1100 !
+b1100 2
+b1100 B
+1@
+b1100 $
+b1100 5
+b1100 6
+b1100 C
+b1100 G
+0A
+b1000 "
+b1000 3
+b1000 7
+b1000 D
+1=
+1*
+#76
+0*
+#78
+1&
+b10000 !
+b10000 2
+b10000 B
+1>
+0<
+0@
+b10000 $
+b10000 5
+b10000 6
+b10000 C
+b10000 G
+b1100 "
+b1100 3
+b1100 7
+b1100 D
+1A
+1*
+#80
+0&
+b1000 !
+b1000 2
+b1000 B
+0>
+1<
+b1000 $
+b1000 5
+b1000 6
+b1000 C
+b1000 G
+0*
+b1 )
+b1 1
+b1 E
+#82
+b100 !
+b100 2
+b100 B
+0<
+1@
+b100 $
+b100 5
+b100 6
+b100 C
+b100 G
+b1000 "
+b1000 3
+b1000 7
+b1000 D
+0A
+1*
+#84
+0*
+#86
+b0 !
+b0 2
+b0 B
+0@
+1%
+b0 $
+b0 5
+b0 6
+b0 C
+b0 G
+0=
+b100 "
+b100 3
+b100 7
+b100 D
+1A
+1*
+#88
+0*
+#90
+1&
+b11100 !
+b11100 2
+b11100 B
+1>
+1<
+1@
+0%
+b11100 $
+b11100 5
+b11100 6
+b11100 C
+b11100 G
+b0 "
+b0 3
+b0 7
+b0 D
+0A
+1*
