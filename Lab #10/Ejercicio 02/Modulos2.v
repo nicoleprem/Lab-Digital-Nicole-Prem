@@ -55,7 +55,7 @@ FFD1 D4(clk, reset, D2[4], ACCU[5]);
 endmodule
 
 module Procesador(input [2:0]F, input [4:0]A, B, input clk, reset, enableDB, enableR, enableALU, enableFF, output [4:0]outDB, outR, outALU, outFF, output  C, ZE);
-tristate_data_buss TDB(A, enableDB, outDB);
+tristate_data_buss TDB(B, enableDB, outDB);
 Accu AC(clk, reset, outALU, enableALU, outFF);
 ALU Al(F, outFF, outDB, outALU, C, ZE);
 tristate_ALU_result AR(outALU, enableR, outR);
